@@ -1,0 +1,26 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "The app shell based on piral-base.",
+  "app": "src/index.html",
+  "scripts": {
+    "start": "piral debug",
+    "build": "piral build"
+  },
+  "keywords": [],
+  "author": "Florian Rappl",
+  "license": "MIT",
+  "importmap": {
+    "inherit": [
+      "piral-base"
+    ]
+  },
+  "dependencies": {
+    "piral-base": "^0.15.9"
+  },
+  "devDependencies": {
+    "piral-cli": "^0.15.9",
+    "piral-cli-webpack5": "^0.15.9",
+    "typescript": "^5.0.4"
+  }
+}

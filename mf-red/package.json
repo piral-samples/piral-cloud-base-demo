@@ -1,0 +1,27 @@
+{
+  "name": "mf-red",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build",
+    "debug-all": "pilet debug ../mf-*/src/index.ts",
+    "deploy": "pilet publish --fresh --url https://base-demo.my.piral.cloud/api/v1/pilet --interactive"
+  },
+  "keywords": [],
+  "author": "Florian Rappl",
+  "license": "MIT",
+  "importmap": {
+    "inherit": [
+      "my-app"
+    ]
+  },
+  "devDependencies": {
+    "my-app": "file:../my-app/dist/emulator/my-app-1.0.0.tgz",
+    "piral-cli": "^0.15.9",
+    "piral-cli-webpack5": "^0.15.9",
+    "typescript": "^5.0.4"
+  }
+}
